@@ -5,7 +5,7 @@ Xamarin forms vector icon label, and tabs. Enables the use of vector based font 
 
 ### Font Resources
 
-The fonts below have already been incorrperated into the solution. If you want to use any of the font icons listed below click the link and install them into the Android, and/or iOS solution. See [iOS Instuctions](#installation), and [Android Instructions]() for font install locations.
+The fonts below have already been incorrperated into the solution. If you want to use any of the font icons listed below click the link and install them into the Android, and/or iOS solution. See [iOS Instuctions](#installation), and [Android Instructions](#android-solution) for font install locations.
 
 | Fonts   | Code Key Files    |
 | ----- | --------- |
@@ -20,6 +20,7 @@ This section details how to install the Xamarin Plugin.
 
 ### Nuget Installation
 Install Plugin.VectorIcon Nuget Package into the following projects:
+
 * Xamarin.Android
 * Xamarin.iOS
 * Xamarin (PCL)
