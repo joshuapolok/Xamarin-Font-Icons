@@ -148,4 +148,6 @@ var _appleIcon = new VectorIconLabel
 ```
 
 ## Results
-
+| Android   | iOS   |
+| ----- | --------- |
+| ![Android Result](https://github.com/joshuapolok/Xamarin-Font-Icons/blob/master/SampleImages/IconLabelsDroid.png) |![iOS Result](https://github.com/joshuapolok/Xamarin-Font-Icons/blob/master/SampleImages/IconLabelsiOS.png) | 
