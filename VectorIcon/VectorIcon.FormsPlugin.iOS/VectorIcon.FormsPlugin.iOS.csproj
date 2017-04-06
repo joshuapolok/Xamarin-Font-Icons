@@ -37,7 +37,7 @@
     <DocumentationFile>bin\iPhone\Release\VectorIcon.FormsPlugin.iOS.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="VectorIconImplementation.cs" />
+    <Compile Include="VectorIconTabRenderer.cs" />
     <Compile Include="ImageHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

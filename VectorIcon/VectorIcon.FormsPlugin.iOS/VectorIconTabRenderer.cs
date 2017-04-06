@@ -5,7 +5,7 @@ using Xamarin.Forms;
 using VectorIcon.FormsPlugin.iOS;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(VectorIconTabbedPage), typeof(VectorIconRenderer))]
+[assembly: ExportRenderer(typeof(VectorIconTabbedPage), typeof(VectorIconTabRenderer))]
 namespace VectorIcon.FormsPlugin.iOS
 {
     /// <summary>
@@ -17,15 +17,46 @@ namespace VectorIcon.FormsPlugin.iOS
     /// <history>
     /// Date             Author              Change Reason                      Change Description
     /// ----------------------------------------------------------------------------------------------------------
-    /// 
+    /// 4/6/2017    Joshua Poling       Bug with icon color     Added function to set set UITabBar appearance
+    /// ----------------------------------------------------------------------------------------------------------
+    /// 4/6/2017    Joshua Poling       Not descriptive         Changed class name from implementation to renderer
     /// ----------------------------------------------------------------------------------------------------------
     /// </history>
-    public class VectorIconRenderer : TabbedRenderer
+    public class VectorIconTabRenderer : TabbedRenderer
     {
         /// <summary>
         /// Used for registration with dependency service
         /// </summary>
         new public static void Init() { }
+
+        /// <summary>
+        /// Called on initial creation of <see cref="VectorIconTabbedPage"/>
+        /// </summary>
+        /// <param name="e"></param>
+        /// <author>Joshua Poling</author>
+        /// <date>April 6, 2017</date>
+        /// <history>
+        /// Date             Author              Change Reason                      Change Description
+        /// ----------------------------------------------------------------------------------------------------------
+        /// 
+        /// ----------------------------------------------------------------------------------------------------------
+        /// </history>
+        protected override void OnElementChanged(VisualElementChangedEventArgs e)
+        {
+            base.OnElementChanged(e);
+
+            var element = Element as VectorIconTabbedPage;
+
+            if (element.SelectedIconColor != null)
+            {
+                UITabBar.Appearance.SelectedImageTintColor = element.SelectedIconColor.ToUIColor();
+
+            }
+            else if (element.UnselectedIconColor != null)
+            {
+                UITabBar.Appearance.TintColor = element.UnselectedIconColor.ToUIColor();
+            }
+        }
 
         /// <summary>
         /// 
