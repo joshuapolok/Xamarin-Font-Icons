@@ -119,7 +119,7 @@ Install fonts into the Assets folder to enable access for Android.
 # Xamarin PCL Implementation
 This section details how to use the font icons once all packages have been installed. 
 
-## Implementing font
+## Implementing font Labels
 ```csharp
 // Fontawesome icon
  var _linuxIcon = new VectorIconLabel 
@@ -145,6 +145,48 @@ var _appleIcon = new VectorIconLabel
      Text       = ThemifyIconCode.TiApple, 
      FontFamily = Device.OnPlatform("themify", "themify.ttf", null)
 };
+```
+
+## Implementing Font Icon Tabs
+You can use the MainTabPage example for an additional aid if needed. 
+
+```csharp
+ public class MainTabPage : VectorIconTabbedPage
+    {
+        public MainTabPage()
+        {
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            SelectedIconColor = Color.White;
+            UnselectedIconColor = Color.Gray;
+            IconSize = 32;
+
+            Tabs = new List<VectorIconNavigationPage>()
+            {
+                new VectorIconNavigationPage(new HomePage())
+                {
+                    TabIcon = FontAwesomeIconCode.FaHome,
+                    Title = "HOME",
+                    IconFontFamily = Device.OnPlatform("fontawesome", "fontawesome.ttf", null)
+                },
+                new VectorIconNavigationPage(new AwardsPage())
+                {
+                    TabIcon = FontAwesomeIconCode.FaTrophy,
+                    Title   = "AWARDS"
+                },
+                new VectorIconNavigationPage(new SettingsPage())
+                {
+                    TabIcon = FontAwesomeIconCode.FaCog,
+                    Title = "SETTINGS"
+                }
+            };
+
+            foreach (var tab in Tabs)
+            {
+                Children.Add(tab);
+            }
+        }
+    }
 ```
 
 ## Results
