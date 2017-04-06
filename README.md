@@ -19,7 +19,7 @@ The fonts below have already been incorrperated into the solution. If you want t
 This section details how to install the Xamarin Plugin. 
 
 ### Nuget Installation
-Install Plugin.VectorIcon Nuget Package into the following projects:
+Install Plugin.VectorIcon [Nuget Package](https://www.nuget.org/packages/Xamarin.Plugin.FontIcons/) into the following projects:
 
 * Xamarin.Android
 * Xamarin.iOS
