@@ -15,7 +15,7 @@ namespace VectorIcon.FormsPlugin.Abstractions
     /// <history>
     /// Date             Author              Change Reason                      Change Description
     /// ----------------------------------------------------------------------------------------------------------
-    /// 
+    ///  
     /// ----------------------------------------------------------------------------------------------------------
     /// </history>
     public class VectorIconTabbedPage : TabbedPage
