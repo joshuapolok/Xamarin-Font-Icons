@@ -75,7 +75,7 @@ This section gives an example of the info.plist font registration. You must regi
 ```
 # Android Solution
 The following section details how to setup the Android solution to enable font icons. 
-<hr/>
+
 ## Initializing Android
 Initialize the vector icon renderer's in your MainActivity.cs file before LoadApplication(new App()), and global::Xamarin.Forms.Init(this, bundle); The Android solution takes an extra step compared to the iOS solution. You'll have to set the resource id used for your Tabbar in the MainActivity.cs. The example below shows that my Resource.Id.\<tab> is named "sliding_tabs"
 
