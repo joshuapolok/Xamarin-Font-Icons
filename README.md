@@ -3,8 +3,10 @@
 Xamarin forms vector icon label, and tabs. Enables the use of vector based font icons for Xamarin TabbedPage and Label for iOS and Android projects. This solution allows the developer to use any font they desire, but the following fonts have corresponding classes already included in the solution. All you need to do is reference the code and font. 
 
 # TabbedPage Example
-![Tabbed Page Example](https://github.com/joshuapolok/Xamarin-Font-Icons/blob/master/SampleImages/iOSAndAndroidTabbedPages.png)
 
+<p align="center">
+  <img src="https://github.com/joshuapolok/Xamarin-Font-Icons/blob/master/SampleImages/iOSAndAndroidTabbedPages.png" alt="TabbedPage Example"/>
+</p>
 ### Font Resources
 
 The fonts below have already been incorrperated into the solution. If you want to use any of the font icons listed below click the link and install them into the Android, and/or iOS solution. See [iOS Instuctions](#installation), and [Android Instructions](#android-solution) for font install locations.
@@ -192,5 +194,6 @@ You can use the MainTabPage example for an additional aid if needed.
 ```
 
 ## Results
-
-![Android and iOS sample](https://github.com/joshuapolok/Xamarin-Font-Icons/blob/master/SampleImages/IconPages.png)
+<p align="center">
+  <img src="https://github.com/joshuapolok/Xamarin-Font-Icons/blob/master/SampleImages/IconPages.png" alt="TabbedPage Example"/>
+</p>
